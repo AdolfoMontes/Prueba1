@@ -18,7 +18,22 @@
 	
 }
 
+.div-centrado2 {
+	max-width: auto;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	margin-left: 250px;
+	margin-right: 250px;
+	background-color: orange;
+}
 
+.div-centrado3 {
+	max-width: auto;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
 
 .div-imagenes{
 	margin: auto;
@@ -74,4 +89,17 @@
 .p-centrado{
 	text-align: center;
 	font-size: 12px;
+}
+
+
+.card-title {
+	text-align: center;
+	font-size: 25px;
+}
+
+
+.modal-header2 {
+	text-align: center;
+	color: #fff;
+	background-color: #717171;
 }
