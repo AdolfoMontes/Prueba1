@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 		
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+      <title>Portal Xpress</title>
+    </head>
+
+
+
+ <body style="background-color: darkgrey;">
+     <!--
+        <nav class="navbar navbar-dark bg-dark ">
+            
+            <div class="container-fluid " >
+                <a class="navbar-brand" href="#">
+                  <img src=".\iconos\icons8_card_exchange_40px.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+                  Portal Xpress
+                </a>
+              </div>
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Resumen</a>
+                <a class="nav-link" href="#">Tarjetas</a>
+                <a class="nav-link" href="#">Puntos Xpress</a>
+                <a class="nav-link" href="#">Movimientos</a>
+                <a class="nav-link" href="#">Configuración</a>
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </div>
+        </nav>
+
+  -->       
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src=".\iconos\icons8_card_exchange_40px.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
+                Portal Xpress</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Resumen</a>
+                        <a class="nav-link" href="#">Tarjetas</a>
+                        <a class="nav-link" href="#">Puntos Xpress</a>
+                        <a class="nav-link" href="#">Movimientos</a>
+                        <a class="nav-link" href="#">Configuración</a>
+                        <a class="nav-link" href="index.html">Cerrar Sesión</a>
+                    </div>
+  
+                </div>
+                <div style="float:right;">
+                    <h style="color:white;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> 
+                    <img src=".\iconos\icons8_female_user_60px.png">Bienvenid@: Katherine</h>
+                </div>
+            </div>
+        </nav>
+
+
+<!-- Tabla-->
+        <div class="container-xl"  >
+            
+            <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Datos de usuario</th>
+                    <th scope="col"></th>
+                    <th scope="col">Datos de contacto</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Estado Cuenta:</th>
+                    <td>Activa</td>
+                    <th>Nombre Contacto:</th>
+                    <td>Katherine Abarca</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Razón Social:</th>
+                    <td>Katherine Abarca</td>
+                    <th>Correo Electrónico:</th>
+                    <td>Kabarca@prueba.cl</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RUT:</th>
+                    <td>11.111.111-1</td>
+                    <th>Teléfono contacto:</th>
+                    <td>111222333</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Giro Comercial:</th>
+                    <td>Natural</td>
+                    <th>Ejecutivo Asignado:</th>
+                    <td>Matias Velasquez</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Número de cuenta Factura:</th>
+                    <td>3152415</td>
+                    <th>Dirección Contacto:</th>
+                    <td>Las acacias #1524</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Dirección comercial de facturación:</th>
+                    <td>Las acacias #1524</td>
+                    <th>Tipo de cliente:</th>
+                    <td>Natural</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Saldo disponible:</th>
+                    <td>$965.000*</td>
+                    <th> </th>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Línea de crédito:</th>
+                    <td>$0*</td>
+                    <th> </th>
+                    <td> </td>
+                  </tr>
+                  
+                </tbody>
+                
+              </table>
+              <div style="text-align: center;">
+                <button type="button" class="btn btn-warning mr-sm-2" data-toggle="modal" data-target="#">Modificar información personal</button>
+              </div>
+
+              <div>
+                  <p> *El saldo es referencial, podría tener un desfase</p>
+              </div>
+              
+        </div>
+
+
+    </body>
+
+
+
+</html>
