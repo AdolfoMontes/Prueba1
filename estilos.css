@@ -49,11 +49,11 @@
 	
 	width: 150px;
 	padding: 20px;
-	background-color: black;
+
 }
 .div-imagenesderecha{
 	float: right;
-	background-color: gray;
+
 }
 
 .btn-izquierda{
@@ -89,6 +89,8 @@
 .p-centrado{
 	text-align: center;
 	font-size: 12px;
+	margin-left: 80px;
+	
 }
 
 
@@ -102,4 +104,9 @@
 	text-align: center;
 	color: #fff;
 	background-color: #717171;
+}
+.p-izq
+{
+	padding-left: 30px;
+	padding-right: 30px;
 }
