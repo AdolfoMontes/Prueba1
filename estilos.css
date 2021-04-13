@@ -49,6 +49,7 @@
 	
 	width: 150px;
 	padding: 20px;
+	margin:auto;
 
 }
 .div-imagenesderecha{
@@ -76,14 +77,14 @@
   .carousel-caption {
     position:absolute;
     right: 10%;
-    top: 15%; /* Cambiar bottom por top y los píxeles que necesites */
+    top: 15%;
     left: 60%;
 	bottom: 15%;
     z-index: 10;
     padding: 30px;
     color: #fff;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.2); /* Añadir para conseguir el fondo con opacidad */
+    background-color: rgba(0, 0, 0, 0.2); /* Añadir para conseguir el fondo con transparencia */
 }
 
 .p-centrado{

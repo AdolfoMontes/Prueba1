@@ -14,36 +14,14 @@
 
 
  <body style="background-color: darkgrey;">
-     <!--
-        <nav class="navbar navbar-dark bg-dark ">
-            
-            <div class="container-fluid " >
-                <a class="navbar-brand" href="#">
-                  <img src=".\iconos\icons8_card_exchange_40px.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
-                  Portal Xpress
-                </a>
-              </div>
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Resumen</a>
-                <a class="nav-link" href="#">Tarjetas</a>
-                <a class="nav-link" href="#">Puntos Xpress</a>
-                <a class="nav-link" href="#">Movimientos</a>
-                <a class="nav-link" href="#">Configuración</a>
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </div>
-        </nav>
-
-  -->       
-
+     
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" style="color:orange" href="#">
                 <img src=".\iconos\icons8_card_exchange_40px.png" alt="" width="40" height="34" class="d-inline-block align-text-top">
                 Portal Xpress</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              
+                
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Resumen</a>
                         <a class="nav-link" href="#">Tarjetas</a>
@@ -53,17 +31,22 @@
                         <a class="nav-link" href="index.html">Cerrar Sesión</a>
                     </div>
   
-                </div>
+                
                 <div style="float:right;">
                     <h style="color:white;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> 
                     <img src=".\iconos\icons8_female_user_60px.png">Bienvenid@: Katherine</h>
                 </div>
             </div>
         </nav>
-
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Tienes 9167 puntos Xpress acumulados en tu cuenta, revisa los descuentos y canjes disponibles en www.xpresscard.cl</strong> 
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
 
 <!-- Tabla-->
-        <div class="container-xl"  >
+        <div class="container-xl" style="margin-top: 50px;"  >
             
             <table class="table table-dark table-striped">
                 <thead>
@@ -134,12 +117,11 @@
               <div>
                   <p> *El saldo es referencial, podría tener un desfase</p>
               </div>
-              
+              <div style="display: inline;float:right"> 
+                <p>Un sitio de  <img src=".\imagenes\logo.png"  style="width: 130px;">  2021 todos los derechos reservados.</p>
+              </div>
         </div>
-
-
+      
     </body>
-
-
 
 </html>
