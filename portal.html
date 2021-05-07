@@ -8,12 +8,14 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 		
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css\estilos.css"> 
       <title>Portal Xpress</title>
     </head>
 
 
 
- <body style="background-color: darkgrey;">
+ <body style="background-color: black;">
      
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -24,7 +26,7 @@
                 
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Resumen</a>
-                        <a class="nav-link" href="#">Tarjetas</a>
+                        <a class="nav-link" href="portal\tarjetas.html">Tarjetas</a>
                         <a class="nav-link" href="#">Puntos Xpress</a>
                         <a class="nav-link" href="#">Movimientos</a>
                         <a class="nav-link" href="#">Configuración</a>
@@ -46,7 +48,7 @@
         </div>
 
 <!-- Tabla-->
-        <div class="container-xl" style="margin-top: 50px;"  >
+        <div class="container-xl opacidad" style="margin-top: 50px;"  >
             
             <table class="table table-dark table-striped">
                 <thead>
@@ -95,16 +97,23 @@
                     <td>Natural</td>
                   </tr>
                   <tr>
-                    <th scope="row">Saldo disponible:</th>
-                    <td>$965.000*</td>
-                    <th> </th>
-                    <td> </td>
+                    <th scope="row">Saldo disponible: </th>
+                    <td>$965.000* </td>
+                    <th> <select class="form-control" id="cmb_divisa">
+                      <option>USD</option>
+                      <option>EUR</option>
+                    </select>  </th>
+                    <td> 
+                      <button type="button" class="btn btn-warning mr-sm-2" data-target="#">Convertir a otra divisa</button> </td>
                   </tr>
                   <tr>
                     <th scope="row">Línea de crédito:</th>
                     <td>$0*</td>
-                    <th> </th>
-                    <td> </td>
+                    <th>  <select class="form-control" id="cmb_divisa">
+                      <option>USD</option>
+                      <option>EUR</option>
+                    </select> </th>
+                    <td><button type="button" class="btn btn-warning mr-sm-2" data-target="#">Convertir a otra divisa</button> </td>
                   </tr>
                   
                 </tbody>
@@ -112,6 +121,7 @@
               </table>
               <div style="text-align: center;">
                 <button type="button" class="btn btn-warning mr-sm-2" data-toggle="modal" data-target="#">Modificar información personal</button>
+                
               </div>
 
               <div>
@@ -123,5 +133,5 @@
         </div>
       
     </body>
-
+    <script src="js/funciones.js"></script>
 </html>
