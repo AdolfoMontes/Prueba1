@@ -154,7 +154,8 @@ $("#tarjeta1").click(function() {
         $("#txt_patente").text('Patente: HJ1434');
         $("#txt_tipoveh").val('Auto');
         $("#titulo_tarj").text('Tarjeta Xpress');
-        $("#saldo").text('$ 215.893 CLP');
+        $("#saldo").text('215893');
+        $("#moneda").text('CLP');
         
 
 });
@@ -171,7 +172,8 @@ $("#tarjeta2").click(function() {
         $("#txt_patente").text('Patente :PK1886');
         $("#txt_tipoveh").val('Camioneta');
         $("#titulo_tarj").text('Tarjeta Flota');
-        $("#saldo").text('$ 512.318 CLP');
+        $("#saldo").text('512318');
+        $("#moneda").text('CLP');
 
 });
 
@@ -183,10 +185,69 @@ function limpiarTxt(){
         $("#txt_patente").text('Patente: ');
         $("#txt_tipoveh").val('');
         $("#titulo_tarj").text('');
-        $("#saldo").text('$ 0 CLP');
+        $("#saldo").text('0');
 };
 
+$("#btn_usd").click(function() {
+        $.getJSON('https://mindicador.cl/api', function(data) {
+        var indicadores = data;
+        var valor = '';
+        var moneda = $('#moneda').text();
+        var saldo = $('#saldo').text();
+        if(moneda =='CLP'){
+                valor = Math.round(saldo/indicadores.dolar.valor) ;
+        }if (moneda=='EUR'){
+                valor =  Math.round(saldo/0.83)
+        }if(moneda=='USD'){
+                valor = saldo;
+        }
 
+        $('#saldo').text(valor);
+        $('#moneda').text('USD');
+        })
         
+});
+
+$("#btn_eur").click(function() {
+        $.getJSON('https://mindicador.cl/api', function(data) {
+        var indicadores = data;
+        var valor = '';
+        var saldo = $('#saldo').text();
+        var moneda = $('#moneda').text();
+        if(moneda =='CLP'){
+                valor = Math.round(saldo/indicadores.euro.valor) ;
+        }if (moneda=='EUR'){
+                valor =  saldo;
+        }if(moneda=='USD'){
+                valor = saldo * 0.83;
+        }
+        $('#saldo').text(valor);
+        $('#moneda').text('EUR');
+        })
+        
+});
+
+
+
+
+
+
+
+$("#btn_clp").click(function() {
+        var saldo = 0;
+        var patente =  $("#txt_patente").text();
+
+        if (patente == 'Patente: HJ1434'){
+                saldo = 215893;
+        }else if (patente =='Patente :PK1886'){
+                saldo = 512318;
+        }
+
+        $('#saldo').text(saldo);
+        $('#moneda').text('CLP');
+
+});
+        
+
 
 

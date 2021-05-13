@@ -100,10 +100,10 @@
 
        
     <!--Contenido-->
-  <div class="d-flex justify-content-center">
+  <div class="d-flex">
    
       <div class="jumbotron sin-bg block">
-        <h1 class="display-4">Tarjetas
+        <h1 class="display-4" >Tarjetas
            <!--Boton tarjetas-->
           <div class="btn-group float-right ">
             <button class=" btn btn-three btn-lg dropdown-toggle fuente-blanca btn-verde" type="button" data-toggle="dropdown" aria-haspopup="true" id="dropdown_tar" aria-expanded="false">
@@ -191,8 +191,17 @@
           </div>
           
           <div class="col" id="columna3">
+
             <h1>Saldo Disponible</h1>
-            <h1 class="lead" id="saldo"> $ CLP</h1>
+          
+            <h1 class="lead" style="display: inline;"> 
+              <h1 class="lead" style="display: inline;"> $ </h1> 
+              <h1 class="lead"  id="saldo" style="display: inline;">  </h1> 
+               <h1 class="lead" id="moneda" style="display: inline;">CLP</h1> 
+              <a type="button" class="btn-three  fuente-blanca " id="btn_clp"> <img src="..\iconos\CLP.png" style="max-width:10%">
+              <a type="button" class="btn-three  fuente-blanca " id="btn_usd"> <img src="..\iconos\USD.png" style="max-width:10%">
+              <a type="button" class="btn-three  fuente-blanca " id="btn_eur"> <img src="..\iconos\EUR.png" style="max-width:10%">
+            </a> 
             
             <div class="form-group">
               <label>Tipo Combustible</label>
