@@ -9,14 +9,17 @@
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="..css\estilos.css"> 
-      <title>Portal Xpress</title>
+      <link rel="stylesheet" media="all" href="..\css\bg.css"/>
+      <link rel="stylesheet" type="text/css" href="..\css\estilos.css"> 
+      <title>Portal Xpress - Gestión de usuarios</title>
+      <link  rel="icon"   href="../imagenes/logo.png" type="image/png" />
     </head>
 
 
 
- <body style="background-color: black;">
-     
+ <body onload="limpiarTxt()"> <img class="background" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/221808/sky.jpg"/>
+
+     <!--Barra superior-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" style="color:orange" href="#">
@@ -47,27 +50,189 @@
           </button>
         </div>
 
-        <div class="d-flex justify-content-center">
+<!-- Circulos-->
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
 
-            <div class="btn-group">
-                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" id="dropdown" aria-expanded="false">
-                    --Seleccione--
-                </button>
-                <div class="dropdown-menu">
-                    <button class="dropdown-item" id= "tarjeta1" >8012 1100 0000 0001</button>
-                    <button class="dropdown-item" id="tarjeta2">7012 1100 0000 0123</button>
-                    
-                </div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+<div class="circle-container">
+  <div class="circle"></div>
+</div>
+
+    
+
+       
+    <!--Contenido-->
+  <div class="d-flex justify-content-center">
+   
+      <div class="jumbotron sin-bg block">
+        <h1 class="display-4">Tarjetas
+           <!--Boton tarjetas-->
+          <div class="btn-group float-right ">
+            <button class=" btn btn-three btn-lg dropdown-toggle fuente-blanca btn-verde" type="button" data-toggle="dropdown" aria-haspopup="true" id="dropdown_tar" aria-expanded="false">
+                --Seleccione tarjeta---
+            </button>
+            <div class="dropdown-menu box-3">
+                <button class="dropdown-item btn btn-three fuente-blanca btn-verde" id= "tarjeta1" >8012 1100 0000 0001</button>
+                <button class="dropdown-item btn btn-three fuente-blanca btn-verde" id="tarjeta2">7012 1100 0000 0123</button>
+                
+            </div>
+            <!--Fin boton tarjeta-->
+          </div>
+        </h1>
+        <p class="lead">Acá puedes revisar el detalle de tus tarjetas y recargar saldo</p>
+      
+      
+    
+    <div class="container bg-blanco "  >
+
+       <!--Tabs-->
+       
+        <div class="container block">
+          
+          <div class="row ">
+            <div class="col-md-8">
+              
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active btn-one" href="#">Ficha Tarjeta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fuente-blanca btn-one" href="#">Configuración</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fuente-blanca btn-one" href="#">Cambio de pin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fuente-blanca btn-one" href="#">Historial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fuente-blanca btn-one" href="#">Movimientos</a>
+                </li>
+              </div>
+            <!-----<div class="col-6 col-md-4">.col-6 .col-md-4</div>-columna-->
+          </div>
+      
+        
+<!--Fin tabs-->
+<!--tarjeta-->
+        <div class="row " >
+          <div class="col" id="columna1">
+            <div class="card " style="width: 18rem; ">
+              <img class="card-img-top" id="imagen_tarjeta" src="..\imagenes\gold.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title" id="titulo_tarj"></h5>
+               <!--<p class="card-text"> </p>  --> 
               </div>
 
+              <div class="card-body justify-content-center">
+                <div >
+                  <a href="#" class="btn btn-three btn-lg btn-rojo fuente-blanca btn-block" >Recargar saldo</a>
+                </div>
+                
+              </div>        
+            </div>
+            </div>
+         
+                <!--Fin tarjeta-->
+          <div class="col" id="columna2">
+           <h1 id="txt_patente">Patente: </h1>
+           <h1 class="lead">Katherine Abarca</h1>
+           <div class="form-group">
+            <label>Número de tarjeta</label>
+            <input type="text" class="form-control" id="txt_numero" disabled >
+            </div>
+            <p>Estado</p>
+            <select class="form-control">
+              <option>Activa</option>
+               <option>Inactiva</option>
+            </select>
+            <div class="form-group" style="padding-top:20px">
+              <label>Nickname</label>
+              <input type="text" class="form-control" id="txt_nick"  >
+            </div>
+          </div>
+          
+          <div class="col" id="columna3">
+            <h1>Saldo Disponible</h1>
+            <h1 class="lead" id="saldo"> $ CLP</h1>
+            
+            <div class="form-group">
+              <label>Tipo Combustible</label>
+              <input type="text" class="form-control" id="txt_tipocomb"disabled >
+              </div>
+            <div class="form-group">
+              <label>Tipo Vehículo</label>
+              <input type="text" class="form-control" id="txt_tipoveh" disabled>
+              </div>
 
-        </div>
-       
-              <div style="display: inline;float:right"> 
+            <div class="form-group">
+              <label>Tipo Documento</label>
+              <input type="text" class="form-control" id="txt_tipodoc" disabled>
+            </div>
+            <a href="#" class="btn btn-three btn-lg btn-verde fuente-blanca btn-block">Guardar</a>
+            <a href="#" class="btn btn-three btn-lg fuente-blanca btn-block">Revertir</a>
+              
+           </div>
+          </div>
+          
+   
+</div> 
+</div>
+
+      
+  </div>
+
+        
+  </div>
+
+       <footer >
+
+         <div style="float: right;"> 
                 <p>Un sitio de  <img src="..\imagenes\logo.png"  style="width: 130px;">  2021 todos los derechos reservados.</p>
               </div>
-        </div>
+
+       </footer>
+             
+       
       
     </body>
-    <script src="..js/funciones.js"></script>
+    <script src="..\js\funciones.js"></script>
 </html>

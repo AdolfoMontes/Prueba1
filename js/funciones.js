@@ -136,12 +136,55 @@ $("#btn_registro").click(function() {
 });
 
 
+$("#menu-toggle").click(function (e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+
+
 $("#tarjeta1").click(function() {
-        tarjeta = $("#tarjeta1").val();
+        var tarjeta = $('#tarjeta1').text();
+        $("#dropdown_tar").empty();
+        console.log(tarjeta);
+        $("#dropdown_tar").append(tarjeta);
+        $("#txt_numero").val(tarjeta);
+        $("#txt_tipocomb").val('GAS95');
+        $("#txt_tipodoc").val('Factura');
+        $("#txt_nick").val('Nissan');
+        $("#txt_patente").text('Patente: HJ1434');
+        $("#txt_tipoveh").val('Auto');
+        $("#titulo_tarj").text('Tarjeta Xpress');
+        $("#saldo").text('$ 215.893 CLP');
         
 
-}
+});
 
+$("#tarjeta2").click(function() {
+        var tarjeta = $('#tarjeta2').text();
+        $("#dropdown_tar").empty();
+        console.log(tarjeta);
+        $("#dropdown_tar").append(tarjeta);
+        $("#txt_numero").val(tarjeta);
+        $("#txt_tipocomb").val('DIESEL');
+        $("#txt_tipodoc").val('Boleta');
+        $("#txt_nick").val('Peugeot');
+        $("#txt_patente").text('Patente :PK1886');
+        $("#txt_tipoveh").val('Camioneta');
+        $("#titulo_tarj").text('Tarjeta Flota');
+        $("#saldo").text('$ 512.318 CLP');
+
+});
+
+function limpiarTxt(){
+        $("#txt_numero").val('');
+        $("#txt_tipocomb").val('');
+        $("#txt_tipodoc").val('');
+        $("#txt_nick").val('');
+        $("#txt_patente").text('Patente: ');
+        $("#txt_tipoveh").val('');
+        $("#titulo_tarj").text('');
+        $("#saldo").text('$ 0 CLP');
+};
 
 
         
